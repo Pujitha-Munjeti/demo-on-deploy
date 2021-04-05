@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #C3073F;">
+  <img src="https://i.postimg.cc/tT6BZkKJ/bookstoreicon.png" alt="digital-library-online-book-store-preview"  width="40px">
+    <a class="navbar-brand" href="#" style="font-size: 25px;">BookStore</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item mt-1">
+            <a class="nav-link" style="color:white" routerLink="/home" routerLinkActive="active"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <!-- userprofile -->
+        <li class="nav-item">
+          <a class="nav-link" style="color:white" *ngIf="!admin&&username!=null" routerLink="/user/userdashboard" routerLinkActive="active"> {{username}} <img [src]=userObj.userImgLink class="card-img-top rounded-circle" alt="" style="width: 40px;; height:40px"></a>
+          
+        </li>
+        <!-- for admin -->
+        <li class="nav-item">
+          <a class="nav-link" style="color:white" *ngIf="admin" routerLink="/admin" routerLinkActive="active"> Admin <img [src]=userObj.userImgLink class="card-img-top rounded-circle" alt="" style="width: 40px;; height:40px"></a>
+        </li>
+        
+      </ul>
+      
+    </div>
+</nav>
+
+
+<router-outlet ></router-outlet>
+
+
+
+
+<footer  style="background-color: #C3073F;">
+  <div class="container p-3">
+    <div class="row ms-5 ps-5">
+      <div class="col-md-4 ">
+        <h5>Get to Know Us</h5>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Press releases</p>
+        <p>Gift a Smile</p>
+      </div>
+      <div class="col-md-4 ">
+        <h5>Connect with Us</h5>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Let Us Help You</h5>
+        <p>Your Account</p>
+        <p>Returns centre</p>
+        <p>App Download</p>
+        <p>Help</p>
+      </div>
+    </div>
+  </div>
+</footer>

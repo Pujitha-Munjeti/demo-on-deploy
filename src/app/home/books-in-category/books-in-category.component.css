@@ -1,0 +1,26 @@
+ngb-rating {
+    color: #FFC107;
+    font-size: 25px;
+}
+.container{
+    font-family:poppins;
+}
+strong,p{
+    font-size: 15px;
+}
+.price{
+    font-family: Arial,sans-serif;
+    font-size: 21px;
+}
+
+.card{
+    border: none;
+    cursor: pointer;
+}
+#buttonfix{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    background-color:#0033a0 ;
+    font-size: 1rem;
+}
