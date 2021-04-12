@@ -33,10 +33,7 @@ export class UsercartComponent implements OnInit {
     this.cartStatus();
 
     this.totalamount()
-    
-
-
-
+   
   }
 
   logout(){
